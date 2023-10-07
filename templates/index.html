@@ -1,0 +1,33 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+  </head>
+
+  <body>
+    {% extends "menu.html" %} {% block content %} {% if session.logado %}
+
+    <form action="" method="post">
+      <label for="titulo">Título:</label>
+      <dd><input type="text" size="30" name="titulo" id="titulo" /></dd>
+      <label for="texto">Texto:</label>
+      <dd><textarea name="texto" id="texto" cols="40" rows="10"></textarea></dd>
+      <dd><input type="submit" value="Publicar" /></dd>
+    </form>
+
+    {% endif %}
+    <ul>
+      {% for entrada in entradas %}
+      <li>
+        <h2>{{ entrada.titulo }}</h2>
+        <p>{{ entrada.texto|safe }}</p>
+      </li>
+      {% else %}
+      <li><em>Até agora nenhuma postagem!!</em></li>
+      {% endfor %}
+    </ul>
+    {% endblock %}
+  </body>
+</html>
