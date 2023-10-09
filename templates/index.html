@@ -9,7 +9,7 @@
   <body>
     {% extends "menu.html" %} {% block content %} {% if session.logado %}
 
-    <form action="" method="post">
+    <form action="" method="post" class="ins-entrada">
       <label for="titulo">Título:</label>
       <dd><input type="text" size="30" name="titulo" id="titulo" /></dd>
       <label for="texto">Texto:</label>
@@ -18,7 +18,7 @@
     </form>
 
     {% endif %}
-    <ul>
+    <ul class="entradas">
       {% for entrada in entradas %}
       <li>
         <h2>{{ entrada.titulo }}</h2>
