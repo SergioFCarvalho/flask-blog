@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+  background: #3974a2;
+}
+a,
+h1,
+h2 {
+  color: #f3d54f;
+}
+h1,
+h2 {
+  font-family: "Georgia", serif;
+  margin: 0;
+}
+h1 {
+  border-bottom: 2px solid #eee;
+}
+h2 {
+  font-size: 1.2em;
+}
+.pagina {
+  margin: 2em auto;
+  width: 35em;
+  border: 5px solid #000000;
+  padding: 0.8em;
+  background-color: white;
+}
+.entradas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.entradas li {
+  margin: 0.6em 1.2em;
+}
+.entradas li h2 {
+  margin-left: -1em;
+}
+.ins-entrada {
+  font-size: 0.9em;
+  border-bottom: 1px solid #000000;
+}
+.ins-entrada dd {
+  font-weight: bold;
+}
+.metanav {
+  text-align: right;
+  font-size: 0.8em;
+  padding: 0.3em;
+  margin-bottom: 1em;
+  background: #fafafa;
+}
+.flash {
+  background: #cee5f5;
+  padding: 0.5em;
+  border: 1px solid #3974a2;
+}
+.erro {
+  background: #fafafa;
+  padding: 0.5em;
+}
